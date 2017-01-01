@@ -1,0 +1,15 @@
+#!/bin/bash
+#Make Bootable flash Macos
+read -p 'Enter your bootable flash drive label' lflash
+read -p 'Choose version of macOS do you want to install:
+1. Mavericks (10.9)
+2. Yosemite (10.10)
+3. El Capitan (10.11)
+4. Sierra (10.12)' ver 
+
+case $ver in
+1) sudo /Applications/Install\ OS\ X\ Mavericks.app/Contents/Resources/createinstallmedia --volume /Volumes/$lflash --applicationpath /Applications/Install\ OS\ X\ Mavericks.app
+2) sudo /Applications/Install\ OS\ X\ Yosemite.app/Contents/Resources/createinstallmedia --volume /Volumes/$lflash --applicationpath /Applications/Install\ OS\ X\ Yosemite.app
+3) sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --volume /Volumes/$lflash --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app
+4) sudo /Applications/Install\ macOS\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/$lflash --applicationpath /Applications/Install\ macOS\ Sierra.app
+esac
