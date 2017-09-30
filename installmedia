@@ -6,6 +6,7 @@ read -p 'Choose version of macOS do you want to install:
 2. Yosemite (10.10)
 3. El Capitan (10.11)
 4. Sierra (10.12):
+5. High Sierra (10.12):
 ' ver
 
 case $ver in
@@ -13,4 +14,5 @@ case $ver in
 2) sudo /Applications/Install\ OS\ X\ Yosemite.app/Contents/Resources/createinstallmedia --volume /Volumes/$lflash --applicationpath /Applications/Install\ OS\ X\ Yosemite.app;;
 3) sudo /Applications/Install\ OS\ X\ El\ Capitan.app/Contents/Resources/createinstallmedia --volume /Volumes/$lflash --applicationpath /Applications/Install\ OS\ X\ El\ Capitan.app;;
 4) sudo /Applications/Install\ macOS\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/$lflash --applicationpath /Applications/Install\ macOS\ Sierra.app;;
+5) sudo /Applications/Install\ macOS\ High\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/$lflash --applicationpath /Applications/Install\ macOS\ High\ Sierra.app;;
 esac
