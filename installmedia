@@ -10,6 +10,7 @@ read -p 'Choose version of macOS do you want to install:
 6. Mojave (10.14)
 7. Catalina (10.15)
 8. Big Sur (11)
+9. Monterey (12)
 ' ver
 
 case $ver in
@@ -21,4 +22,5 @@ case $ver in
 6) sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstallmedia --volume /Volumes/$lflash --applicationpath /Applications/Install\ macOS\ Mojave.app;;
 7) sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstallmedia --volume /Volumes/$lflash --applicationpath /Applications/Install\ macOS\ Catalina.app;;
 8) sudo /Applications/Install\ macOS\ Big\ Sur.app/Contents/Resources/createinstallmedia --volume /Volumes/$lflash --applicationpath /Applications/Install\ macOS\ Big\ Sur.app;;
+8) sudo /Applications/Install\ macOS\ Monterey.app/Contents/Resources/createinstallmedia --volume /Volumes/$lflash --applicationpath /Applications/Install\ macOS\ Monterey.app;;
 esac
