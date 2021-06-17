@@ -5,9 +5,11 @@ read -p 'Choose version of macOS do you want to install:
 1. Mavericks (10.9)
 2. Yosemite (10.10)
 3. El Capitan (10.11)
-4. Sierra (10.12):
-5. High Sierra (10.13):
-6. Mojave (10.14):
+4. Sierra (10.12)
+5. High Sierra (10.13)
+6. Mojave (10.14)
+7. Catalina (10.15)
+8. Big Sur (11)
 ' ver
 
 case $ver in
@@ -17,4 +19,6 @@ case $ver in
 4) sudo /Applications/Install\ macOS\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/$lflash --applicationpath /Applications/Install\ macOS\ Sierra.app;;
 5) sudo /Applications/Install\ macOS\ High\ Sierra.app/Contents/Resources/createinstallmedia --volume /Volumes/$lflash --applicationpath /Applications/Install\ macOS\ High\ Sierra.app;;
 6) sudo /Applications/Install\ macOS\ Mojave.app/Contents/Resources/createinstallmedia --volume /Volumes/$lflash --applicationpath /Applications/Install\ macOS\ Mojave.app;;
+7) sudo /Applications/Install\ macOS\ Catalina.app/Contents/Resources/createinstallmedia --volume /Volumes/$lflash --applicationpath /Applications/Install\ macOS\ Catalina.app;;
+8) sudo /Applications/Install\ macOS\ Big\ Sur.app/Contents/Resources/createinstallmedia --volume /Volumes/$lflash --applicationpath /Applications/Install\ macOS\ Big\ Sur.app;;
 esac
