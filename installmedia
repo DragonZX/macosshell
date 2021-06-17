@@ -1,5 +1,5 @@
 #!/bin/bash
-# Make Bootable flash Macos
+# Make Bootable flash MacOS
 read -p 'Enter your bootable flash drive label: ' lflash
 read -p 'Choose version of macOS do you want to install:
 1. Mavericks (10.9)
